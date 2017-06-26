@@ -2037,7 +2037,8 @@ function copyTempDouble(ptr) {
             } else if (typeof window != 'undefined' &&
               typeof window.prompt == 'function') {
               // Browser.
-              result = window.prompt('Input: ');  // returns null on cancel
+              //result = window.prompt('Input: ');  // returns null on cancel
+              result = areaInput();
               if (result !== null) {
                 result += '\n';
               }
@@ -21926,7 +21927,7 @@ if (Module['noInitialRun']) {
 }
 
 
-run();
+//run();
 
 // {{POST_RUN_ADDITIONS}}
 
